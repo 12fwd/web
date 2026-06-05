@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    {"source":"/管理后台","destination":"/管理后台.html"},
+    {"source":"/(.*)","destination":"/index.html"}
+  ],
+  "headers": [
+    {"source":"/管理后台.html","headers":[{"key":"Cache-Control","value":"no-cache, no-store"}]},
+    {"source":"/api/*","headers":[{"key":"Cache-Control","value":"no-cache, no-store"}]}
+  ]
+}
